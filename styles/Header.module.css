@@ -1,0 +1,141 @@
+.container {
+  height: 5rem;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  position: fixed;
+  width: 100%;
+  grid-area: header;
+}
+
+.tab {
+  color: var(--primaryLight);
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+.tab:hover {
+  cursor: pointer;
+  color: rgb(97, 97, 97);
+}
+.tabContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+}
+.tabDrawerContainer {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.drawerContainer {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: relative;
+  height: 5rem;
+}
+.tabsDrawer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.draw {
+  min-height: 100vh;
+  width: 12rem;
+  background: var(--primary);
+  position: absolute;
+  left: -15rem;
+  top: 0;
+}
+.drawer {
+  animation: slide 0.2s forwards;
+}
+.drawerIcon {
+  color: var(--itcare);
+}
+.drawerin {
+  animation: slideBack 0.2s forwards;
+}
+.drawerTab {
+  margin-left: 2rem;
+  color: var(--itcare);
+}
+.drawerSubTab {
+  margin-left: 3rem;
+  color: var(--white);
+}
+.hr {
+  width: 80%;
+  border-top: 1px solid rgb(104, 104, 104);
+  border-bottom: none;
+}
+/************ DROPDOWN ************/
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dropDownTab {
+  color: white;
+}
+.dropDownTab:hover {
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  left: -8rem;
+  position: absolute;
+  background-color: var(--primary);
+  min-width: 15rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  animation-name: slideDown;
+  animation-duration: 0.5s;
+}
+
+.dropdown:hover div {
+  display: block;
+}
+.dropdownContent:hover div {
+  display: block;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0rem);
+  }
+
+  100% {
+    transform: translateX(15rem);
+  }
+}
+@keyframes slideBack {
+  0% {
+    transform: translateX(15rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+  }
+}
+.logo {
+  height: 3rem;
+}
+@media screen and (max-width: 1000px) {
+  .drawerContainer {
+    padding: 1rem 1rem;
+  }
+}

@@ -1,16 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Barlow", sans-serif;
+  font-family: "Jura", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+p {
+  font-size: 19px;
+  font-weight: 200;
+}
 
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --primary: rgb(60, 83, 97);
+  --primaryDark: rgb(24, 33, 39);
+  --primaryLight: rgb(99, 137, 163);
+  --pText: rgb(53, 53, 53);
+  --itcare: rgb(195, 246, 114);
+  --itcareDark: rgb(160, 209, 80);
+}
+
+/* 
+
+:root {
+  --primary: rgb(180, 180, 180);
+  --primaryDark: rgb(88, 107, 58);
+  --pText: rgb(53, 53, 53);
+}
+*/

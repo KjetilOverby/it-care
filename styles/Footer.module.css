@@ -1,0 +1,49 @@
+.container {
+  height: auto;
+  padding-bottom: 1rem;
+  width: 100vw;
+  background: var(--primary);
+  grid-area: footer;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: ". one two three .";
+}
+.header {
+  font-style: italic;
+  color: var(--itcare);
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+.subText {
+  font-style: italic;
+  margin: 0;
+  color: var(--itcareDark);
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+.img {
+  grid-area: three;
+  height: 10rem;
+  margin-top: 1rem;
+}
+.infoContainer {
+  grid-area: one;
+}
+.openContainer {
+  grid-area: two;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1rem 1fr 1fr;
+    grid-template-areas:
+      ". one one"
+      ". two two"
+      ". three three";
+  }
+  .img {
+    margin-top: 2rem;
+    margin-left: -1rem;
+  }
+}

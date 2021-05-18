@@ -1,0 +1,89 @@
+.container {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 35rem 1fr 1fr 35rem;
+  grid-template-rows: 10rem auto auto;
+  grid-template-areas:
+    ". header header ."
+    ". section section ."
+    ". section2 section2 .";
+}
+.header {
+  grid-area: header;
+  margin-top: 5rem;
+}
+/****** MOBILSECTION  *********/
+
+.mobilSection1Container {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "section1Text section1Img";
+  grid-column-gap: 2rem;
+}
+.mobilSection2Container {
+  margin-top: 10rem;
+  grid-area: section2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "section2Header section2header"
+    "section2Text section2Img";
+  grid-column-gap: 2rem;
+}
+.section1Img {
+  grid-area: section1Img;
+  width: 100%;
+}
+.section2Img {
+  grid-area: section2Img;
+  width: 100%;
+}
+.pText {
+  margin-top: 0;
+  font-weight: 300;
+}
+.pText1 {
+  margin-top: 0;
+  font-weight: 400;
+}
+.section1Text {
+  grid-area: section1Text;
+}
+.section2Text {
+  grid-area: section2Text;
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    grid-template-columns: 20rem 1fr 1fr 20rem;
+  }
+}
+@media screen and (max-width: 1740px) {
+  .container {
+    grid-template-columns: 15rem 1fr 1fr 15rem;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .container {
+    grid-template-columns: 10rem 1fr 1fr 10rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1rem 1fr 1fr 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mobilSection1Container {
+    grid-template-areas:
+      "section1Text section1Text"
+      "section1Img section1Img";
+  }
+  .mobilSection2Container {
+    grid-template-areas:
+      "section2Header section2header"
+      "section2Text section2Text"
+      "section2Img section2Img";
+  }
+}
