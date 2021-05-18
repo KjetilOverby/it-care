@@ -31,10 +31,6 @@
 }
 .liText {
   color: rgb(121, 121, 121);
-  font-weight: 100;
-  font-style: italic;
-  font-size: 1.1rem;
-  margin-top: 0.3rem;
 }
 
 .serviceCardContainer {

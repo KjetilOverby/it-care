@@ -48,8 +48,8 @@ function HeaderComponent() {
             <p className={styles.drawerTab}>Mobil</p>
           </Link>
           <hr className={styles.hr} />
-          <Link href="/slipeservice">
-            <p className={styles.drawerTab}>Slipeservice</p>
+          <Link href="/support">
+            <p className={styles.drawerTab}>Support</p>
           </Link>
           <hr className={styles.hr} />
           <Link href="/kontakt">
@@ -105,8 +105,8 @@ function HeaderComponent() {
             <Link href="/mobil">
               <p className={styles.tab}>Mobil</p>
             </Link>
-            <Link href="/mobil">
-              <p className={styles.tab}>Slipeservice</p>
+            <Link href="/support">
+              <p className={styles.tab}>Support</p>
             </Link>
             <Link href="/kontakt">
               <p className={styles.tab}>Kontakt oss</p>

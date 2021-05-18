@@ -26,6 +26,12 @@ p {
 * {
   box-sizing: border-box;
 }
+li {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
 
 :root {
   --primary: rgb(60, 83, 97);
@@ -34,6 +40,7 @@ p {
   --pText: rgb(53, 53, 53);
   --itcare: rgb(195, 246, 114);
   --itcareDark: rgb(160, 209, 80);
+  --pFontWeight: 200;
 }
 
 /* 
